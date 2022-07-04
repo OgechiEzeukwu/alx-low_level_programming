@@ -11,9 +11,9 @@ int main(void)
 
 			for (var = 0; var < 10; var++)
 						putchar((var % 10) + '0');
-
+0
 				putchar('\n');
 
-					return (0);
+			return (0);
 }
 
