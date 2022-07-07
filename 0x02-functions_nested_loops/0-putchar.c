@@ -1,18 +1,25 @@
-#include main.h
+#include "main.h"
 
 /**
- * main - Entry point
- * Return: Always 0 (Success)
+ * main - this program prints _putchar
+ *
+ * created : Iamsteveameh
+ * cc: 5 july, 2022
+ *
+ * Return: (0) if successful
  */
 int main(void)
 {
- char joy[9] = "_putchar";
- int i;
+	char var[] = "_putchar";
+	int ii;
+	/*length of the array var*/
+	int lenVar = sizeof(var) / sizeof(var[0]);
 
- for (i = 0; i < 8; i = i + 1)
- {
- _putchar(joy[i]);
- }
- _putchar('\n');
- return (0);
+	for (ii = 0; ii < lenVar - 1; ii++)
+	{
+		_putchar(var[ii]);
+	}
+	_putchar('\n');
+
+	return (0);
 }
